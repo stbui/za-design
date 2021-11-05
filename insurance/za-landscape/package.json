@@ -1,0 +1,38 @@
+{
+    "name": "@za-design/landscape",
+    "version": "0.0.1",
+    "description": "",
+    "author": "stbui <stbui@stbui.com>",
+    "homepage": "https://github.com/stbui/za-design",
+    "license": "ISC",
+    "main": "lib/index",
+    "module": "esm/index.js",
+    "types": "esm/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/stbui/za-design.git"
+    },
+    "scripts": {
+        "build": "yarn run build-cjs && yarn run build-esm",
+        "build-cjs": "rimraf ./lib && tsc",
+        "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+        "watch": "rimraf ./lib && tsc --watch"
+    },
+    "bugs": {
+        "url": "https://github.com/stbui/za-design/issues"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "peerDependencies": {
+        "react": "^17.0.2"
+    },
+    "dependencies": {
+        "@stbui/za-theme": "0.0.1",
+        "styled-components": "5.3.1"
+    },
+    "devDependencies": {
+        "react": "^17.0.2",
+        "rimraf": "^3.0.0"
+    }
+}

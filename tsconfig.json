@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "jsx": "react",
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "noImplicitAny": false,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "declaration": true,
+        "sourceMap": true,
+        "lib": ["dom"],
+        "strictFunctionTypes": false,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        // "noUnusedLocals": true,
+        // "noUnusedParameters": true,
+        "stripInternal": true,
+        "resolveJsonModule": true,
+        "strict": true,
+        "paths": {
+            "za-playground": ["./node_modules/za-playground/src"],
+            "za-playground/*": ["./node_modules/za-playground/src/*"]
+        }
+    }
+}

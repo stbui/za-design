@@ -1,0 +1,13 @@
+{
+    "npmClient": "yarn",
+    "useWorkspaces": true,
+    "packages": ["packages/*", "vscode/*"],
+    "command": {
+        "publish": {
+            "conventionalCommits": true,
+            "allowBranch": ["master", "next"],
+            "message": "chore(release): Publish"
+        }
+    },
+    "version": "0.3.0"
+}
