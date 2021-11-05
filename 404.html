@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="/za-desgin/umi.cdf0a5eb.css" />
+    <script>
+      window.routerBase = "/za-desgin/";
+    </script>
+    <script>
+      //! umi version: 3.5.19
+    </script>
+    <script>
+      !(function () {
+        var e = localStorage.getItem("dumi:prefers-color"),
+          t = window.matchMedia("(prefers-color-scheme: dark)").matches,
+          r = ["light", "dark", "auto"];
+        document.documentElement.setAttribute(
+          "data-prefers-color",
+          e === r[2] ? (t ? r[1] : r[0]) : r.indexOf(e) > -1 ? e : r[0]
+        );
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      if (location.pathname.startsWith("/za-desgin/~demos/")) {
+        document.body.style.background = "#f5f7fa";
+      }
+    </script>
+    <script src="/za-desgin/umi.6d587b86.js"></script>
+  </body>
+</html>
